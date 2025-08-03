@@ -1,4 +1,4 @@
-module half_adder(input a,b,cin,output sum,cout);
+module full_adder(input a,b,cin,output sum,cout);
 
 // sum = a xor b xor cin
 // cout = a.b + cin.(a xor b)
