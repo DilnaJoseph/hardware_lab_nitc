@@ -14,7 +14,7 @@ module comparator_tb;
          a = i;
          b = j;
         #10;
-        $display(" %b %b | %b %b %b ",a,b,equal,greater,lesser)
+        $display(" %b %b | %b %b %b ",a,b,equal,greater,lesser);
     end
     end
     $finish;
