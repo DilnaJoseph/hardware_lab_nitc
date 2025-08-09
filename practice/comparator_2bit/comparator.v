@@ -3,10 +3,10 @@ module comparator(input[3:0] a,b,output equal,greater,lesser);
   wire e0,e1,e2,e3,g0,g1,g2,g3,l0,l1,l2,l3;
   wire eq1,eq2,gr1,gr2,gr3,gr4,gr5,ls1,ls2,ls3,ls4,ls5;
   
-  comparator_1bit(a[0],b[0],e0,g0,l0);
-  comparator_1bit(a[1],b[1],e1,g1,l1);
-  comparator_1bit(a[2],b[2],e2,g2,l2);
-  comparator_1bit(a[3],b[3],e3,g3,l3);
+  comparator_1bit c0(a[0],b[0],e0,g0,l0);
+  comparator_1bit c1(a[1],b[1],e1,g1,l1);
+  comparator_1bit c2(a[2],b[2],e2,g2,l2);
+  comparator_1bit c3(a[3],b[3],e3,g3,l3);
 
   and(eq1,e0,e1);
   and(eq2,e2,e3);
